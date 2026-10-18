@@ -19,8 +19,8 @@ require_command shellcheck
 
 cd "$ROOT_DIR"
 
-shellcheck tools/sh/*.sh packaging/arch/common/*.sh src/usr/bin/argvus-hello
-bash -n tools/sh/*.sh packaging/arch/common/*.sh src/usr/bin/argvus-hello
+shellcheck tools/sh/*.sh packaging/arch/common/*.sh
+bash -n tools/sh/*.sh packaging/arch/common/*.sh
 
 metadata() {
 	bash -c '

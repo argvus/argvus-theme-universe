@@ -28,15 +28,15 @@ arch_normalize_source_tree() {
 	fi
 }
 
-arch_check_example_payload() {
+arch_check_payload() {
 	local source_root="${srcdir}/${pkgname}-${pkgver}"
 
-	test -x "${source_root}/src/usr/bin/argvus-hello"
-	test "$("${source_root}/src/usr/bin/argvus-hello")" = \
-		"Hello, ARGVUS Skeleton Package!"
+	test -n "$(find "${source_root}/src" -type f -print -quit)"
+	local script
+	while IFS= read -r -d '' script; do bash -n "$script"; done < <(find "${source_root}/src" -type f -name '*.sh' -print0)
 }
 
-arch_package_example_payload() {
+arch_package_payload() {
 	local source_root="${srcdir}/${pkgname}-${pkgver}"
 
     cp -a "${source_root}/src/." "${pkgdir}/"
