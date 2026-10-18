@@ -31,11 +31,12 @@ install:
 install-package: install
 
 validate:
+	@sh tools/sh/sync-skeleton.sh --check
 	@tools/sh/validate.sh
 
 lint:
-	@shellcheck tools/sh/*.sh packaging/arch/common/*.sh src/usr/bin/argvus-hello
-	@bash -n tools/sh/*.sh packaging/arch/common/*.sh src/usr/bin/argvus-hello
+	@shellcheck tools/sh/*.sh packaging/arch/common/*.sh
+	@bash -n tools/sh/*.sh packaging/arch/common/*.sh
 	@git diff --check
 	@echo "Lint OK"
 
