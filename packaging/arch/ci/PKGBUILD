@@ -5,14 +5,14 @@ pkgver=0.1.0
 pkgrel=1
 pkgdesc="universe theme for ARGVUS"
 arch=('any')
-url="https://github.com/argvus/argvus"
+url="https://github.com/argvus/argvus-theme-universe"
 license=('GPL-3.0-only')
 depends=(
   'argvus'
   'argvus-appearance>=0.1.0'
 )
 options=('!debug')
-source=("${pkgname}-${pkgver}.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=()
 
 # shellcheck disable=SC1091
