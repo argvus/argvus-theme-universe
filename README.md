@@ -46,6 +46,13 @@ Validate with `make validate` before building. The design rules are in
 [DEVELOPMENT.md](DEVELOPMENT.md); the ARGVUS documentation for themes is in
 `argvus/docs/en/user-guide/appearance.md` of the `argvus` repository.
 
+## Contributing and policies
+
+- [CONTRIBUTING.md](https://github.com/argvus/.github/blob/main/CONTRIBUTING.md) — contribution workflow
+- [SECURITY.md](https://github.com/argvus/.github/blob/main/SECURITY.md) — private vulnerability reports
+- [Code of Conduct](https://github.com/argvus/.github/blob/main/policies/CODE_OF_CONDUCT.md) — community standards
+- [AI usage policy](https://github.com/argvus/.github/blob/main/policies/IA_USAGE.md) — rules for AI-assisted contributions
+
 ## License
 
 GPL-3.0-only. See [LICENSE](LICENSE).
