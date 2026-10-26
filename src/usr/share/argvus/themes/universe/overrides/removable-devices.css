@@ -18,7 +18,7 @@
 }
 
 .storage-menu-row {
-  color: #eeeeee;
+  color: {{ @accent | hex }};
   background-color: transparent;
   background-image: none;
   border: 0;
@@ -30,7 +30,7 @@
 .storage-menu-row.submenu-open,
 .storage-menu-row.pointer-over {
   color: #000000;
-  background-color: #eeeeee;
+  background-color: {{ @accent | hex }};
   background-image: none;
   border: 0;
   box-shadow: none;
